@@ -6,37 +6,34 @@ This project is a backend API system designed to manage security screening devic
 
 ---
 
-## Asset Management
+### Asset Management
 
 Each security screening device is registered as an Asset within the system and the device's information is stored.
 
 
-## Daily Inspection Tracking
+### Daily Inspection Tracking
 
 The system records information for each inspection.
 
 
-## Maintenance Management
+### Maintenance Management
 
 The system tracks maintenance activities performed on devices, preventive maintenance and corrective maintenance.
 
+### Reporting
 
-## Authentication & Authorization
+The system includes endpoints that generate operational reports that support monitoring.
+
+### Authentication & Authorization
 
 The system implements secure authentication using JWT (JSON Web Tokens).
 
-### Key Security Features
+#### Key Security Features
 - Secure login endpoint
 - Password hashing using bcrypt
 - JWT token generation
 - Protected API endpoints
 	
-
-## Reporting
-
-The system includes endpoints that generate operational reports that support monitoring.
-
-
 ---
 
 ## Technologies Used
@@ -117,16 +114,14 @@ GET /reports/daily-checks-summary
 
 ---
 
-## What This Project Demonstrates
-
-This project demonstrates several backend development concepts:
-	-	REST API design using FastAPI
-	-	Secure authentication using JWT
-	-	Password hashing and verification
-	-	Relational database design using SQLAlchemy
-	-	Multi-site data isolation
-	-	Backend architecture organization
-	-	API documentation using Swagger
+### This project demonstrates several backend development concepts
+- REST API design using FastAPI
+- Secure authentication using JWT
+- Password hashing and verification
+- Relational database design using SQLAlchemy
+- Multi-site data isolation
+- Backend architecture organization
+- API documentation using Swagger
 
 ---
 
