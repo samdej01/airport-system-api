@@ -2,128 +2,40 @@
 
 ## Project Overview
 
-Airport Security Management & Maintenance System is a backend API system designed to manage security screening devices across multiple airports. The system supports a multi-site architecture, meaning that each airport operates independently and users can only access data belonging to their assigned site.
-
----
-
-## Multi-Site System Architecture
-
-The system is designed to support multiple airports such as:
-	-	King Khalid International Airport — Riyadh
-	-	King Abdulaziz International Airport — Jeddah
-	-	King Fahd International Airport — Dammam
-
-Each airport is treated as a separate site within the system.
-
-This ensures:
-	-	Users are assigned to a specific airport
-	-	Technicians only access devices at their own site
-	-	Data from different airports remains isolated
-
-This approach allows the system to scale easily to 20+ airports in the future.
+This project is a backend API system designed to manage security screening devices across multiple airports. The system supports a *multi-site architecture*, meaning that each airport operates independently and users can only access data belonging to their assigned site.
 
 ---
 
 ## Asset Management
 
-Each security screening device is registered as an Asset within the system.
+Each security screening device is registered as an Asset within the system and the device's information is stored.
 
-### Device Information Stored
-	-	Facility Number
-	-	Serial Number
-	-	Device Type
-	-	Manufacturer
-	-	Model
-	-	Production Year
-	-	Site (Airport)
-	-	Location inside the airport (Terminal / Gate)
-	-	Operational Status
-
-This allows the system to maintain a complete inventory of security devices across all airports.
-
----
 
 ## Daily Inspection Tracking
 
-Each device must be inspected daily.
+The system records information for each inspection.
 
-The system records the following information for each inspection:
-	-	Asset ID
-	-	Inspection Date
-	-	Operational Status
-	-	Operating
-	-	Not Ready
-	-	Decommissioned
-	-	Optional technician remarks
-
-This enables the system to track the daily operational status of all devices.
-
----
 
 ## Maintenance Management
 
-The system tracks maintenance activities performed on devices.
+The system tracks maintenance activities performed on devices, preventive maintenance and corrective maintenance.
 
-Two types of maintenance are supported.
-
-### Preventive Maintenance
-
-Routine maintenance such as:
-	-	Cleaning devices
-	-	Inspecting sensors
-	-	Checking filters
-	-	Performing system checks
-
-### Corrective Maintenance
-
-Maintenance performed to resolve faults such as:
-	-	Replacing components
-	-	Repairing hardware
-	-	Fixing malfunctions
-
-Each maintenance log includes:
-	-	Asset ID
-	-	Maintenance Type
-	-	Date
-	-	Description
-	-	Technician responsible
-
-This allows the system to maintain a complete maintenance history for each device.
-
----
 
 ## Authentication & Authorization
 
 The system implements secure authentication using JWT (JSON Web Tokens).
 
 ### Key Security Features
-	-	Secure login endpoint
-	-	Password hashing using bcrypt
-	-	JWT token generation
-	-	Protected API endpoints
-
-After login, users receive an access token which must be included in requests.
-
-Example:
-
-```
-Authorization: Bearer <access_token>
-```
-
-The token ensures that users can only access data belonging to their assigned site.
-
----
+- Secure login endpoint
+- Password hashing using bcrypt
+- JWT token generation
+- Protected API endpoints
+	
 
 ## Reporting
 
-The system includes endpoints that generate operational reports.
+The system includes endpoints that generate operational reports that support monitoring.
 
-Examples include:
-	-	Asset operational status summary
-	-	Maintenance history for a specific device
-	-	Daily inspection summaries for a site
-
-These reports help support operational monitoring and decision making.
 
 ---
 
