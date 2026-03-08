@@ -2,6 +2,7 @@
 
 This project is a backend API system designed to manage security screening devices across multiple airports. 
 
+---
 
 ### Multi-Site Architecture
 Each airport operates independently and users can only access data belonging to their assigned site.
