@@ -2,16 +2,7 @@
 
 ## Project Overview
 
-Airport Security Management & Maintenance System is a backend system designed to manage security screening devices across multiple airports.
-
-The system provides a centralized API that allows technicians and operators to:
-	-	Register and manage screening devices
-	-	Record daily inspections
-	-	Track preventive and corrective maintenance
-	-	Maintain a full historical record for each device
-	-	Generate operational reports
-
-The system supports a multi-site architecture, meaning that each airport operates independently and users can only access data belonging to their assigned site.
+Airport Security Management & Maintenance System is a backend API system designed to manage security screening devices across multiple airports. The system supports a multi-site architecture, meaning that each airport operates independently and users can only access data belonging to their assigned site.
 
 ---
 
